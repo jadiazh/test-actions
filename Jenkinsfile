@@ -18,7 +18,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                sh 'printenv'
+                sh 'printenv|sort'
             }
         }
     }
