@@ -10,11 +10,15 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
+                sh 'ls -la'
+                sh 'pwd'
+                
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+                sh 'printenv'
             }
         }
     }
